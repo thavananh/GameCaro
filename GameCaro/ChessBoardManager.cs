@@ -9,18 +9,20 @@ namespace GameCaro
     public class ChessBoardManager
     {
         #region Properties
-        
-        public Panel chessBoard
+        private Panel chessBoard;
+        public Panel ChessBoard
         {
             get { return chessBoard; }
             set { chessBoard = value; }
         }
+
+        
         #endregion
 
         #region Initialize
         public ChessBoardManager(Panel chessBoard)
         {
-            this.chessBoard = chessBoard;
+            this.ChessBoard = chessBoard;
         }
         #endregion
 
@@ -38,9 +40,16 @@ namespace GameCaro
                         Height = ConstantAttributes.BTNCHESSBOARD_HEIGHT,
                         Location = new Point(j * ConstantAttributes.BTNCHESSBOARD_WIDTH, i * ConstantAttributes.BTNCHESSBOARD_HEIGHT)
                     };
+                    btn.Click += btn_Click;
                     chessBoard.Controls.Add(btn);
                 }
             }
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            btn.BackgroundImage = Image.FromFile();
         }
         #endregion
     }
