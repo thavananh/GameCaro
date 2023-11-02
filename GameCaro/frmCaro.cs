@@ -18,16 +18,13 @@ namespace GameCaro
         public frmCaro()
         {
             InitializeComponent();
-            
+
         }
 
         private void frmCaro_Load(object sender, EventArgs e)
         {
-            chessBoard = new ChessBoardManager(pnlBanCo);
+            chessBoard = new ChessBoardManager(pnlBanCo, txtPlayerName, pctbAvatar);
             chessBoard.drawChessBoard();
-
         }
-
-        
     }
 }

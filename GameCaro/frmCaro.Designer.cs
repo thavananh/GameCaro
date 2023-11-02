@@ -33,12 +33,12 @@
             ptcbThumbnail = new PictureBox();
             pnlThumbnail = new Panel();
             panel3 = new Panel();
+            progessBarCoolDown = new ProgressBar();
             button1 = new Button();
             txtIP = new TextBox();
             txtPlayerName = new TextBox();
             label1 = new Label();
             pctbAvatar = new PictureBox();
-            progessBarCoolDown = new ProgressBar();
             ((System.ComponentModel.ISupportInitialize)ptcbThumbnail).BeginInit();
             pnlThumbnail.SuspendLayout();
             panel3.SuspendLayout();
@@ -85,6 +85,13 @@
             panel3.Size = new Size(344, 268);
             panel3.TabIndex = 2;
             // 
+            // progessBarCoolDown
+            // 
+            progessBarCoolDown.Location = new Point(3, 36);
+            progessBarCoolDown.Name = "progessBarCoolDown";
+            progessBarCoolDown.Size = new Size(160, 29);
+            progessBarCoolDown.TabIndex = 6;
+            // 
             // button1
             // 
             button1.Location = new Point(3, 102);
@@ -100,6 +107,7 @@
             txtIP.Name = "txtIP";
             txtIP.Size = new Size(160, 27);
             txtIP.TabIndex = 4;
+            txtIP.Text = "127.0.0.1";
             // 
             // txtPlayerName
             // 
@@ -120,20 +128,12 @@
             // 
             // pctbAvatar
             // 
-            pctbAvatar.BackgroundImage = Properties.Resources._10;
             pctbAvatar.BackgroundImageLayout = ImageLayout.Stretch;
             pctbAvatar.Location = new Point(169, 0);
             pctbAvatar.Name = "pctbAvatar";
             pctbAvatar.Size = new Size(175, 187);
             pctbAvatar.TabIndex = 0;
             pctbAvatar.TabStop = false;
-            // 
-            // progessBarCoolDown
-            // 
-            progessBarCoolDown.Location = new Point(3, 36);
-            progessBarCoolDown.Name = "progessBarCoolDown";
-            progessBarCoolDown.Size = new Size(160, 29);
-            progessBarCoolDown.TabIndex = 6;
             // 
             // frmCaro
             // 
